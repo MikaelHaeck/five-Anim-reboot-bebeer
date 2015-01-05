@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>hamby style</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<a onclick="changeClass()" href="#" class="menu example5" id="cross"><span></span></a>
+
+
+	<script type="text/javascript">
+	
+			function changeClass()
+    {	
+    	if(  document.getElementById("cross").className.match(/(?:^|\s)menu example5 example5_cross(?!\S)/))
+    	{
+    		document.getElementById("cross").className = "menu example5";
+    	}
+    	else
+    	{document.getElementById("cross").className += " example5_cross";}
+        
+    }
+			
+	</script>
+</body>
+</html>
