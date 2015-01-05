@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr">
 	<head>
-		<title>Web app - Mobile</title>
+		<title>Open menu </title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
@@ -12,26 +12,21 @@
 		<ul>
 			<li><a href="../hamby/index.html">Animation 1</a></li>
 			<li><a href="../hamby2/index.html">Animation 2</a></li>
-			<li><a href="../openmenu/index.html">Animation 3</a></li>
+			<li><a class="current" href="index.html">Animation 3</a></li>
 			<li><a href="../libounce/index.html">Animation 4</a></li>
-			<li><a class="current" href="index.html">Animation 5</a></li>
+			<li><a href="../login/index.html">Animation 5</a></li>
 		</ul>
 	</nav>
 	<div class="container">
 		<h1>Animation open menu</h1>
-		<p>Il s'agit ici d'une animation de ce qu'il se passerait lorsqu'on clique sur <q>se connecter</q>. La box permettant de se connecter <q>tombe</q> avec une légère rotation et un effet bounce.</p>
+		<p>Il s'agit ici d'une animation de la nav lorsqu'elle souvre avec un petit effet bounce à la fin.</p>
 		<div class="screenmobile">
-			<nav class="section__nav" id="connect">
-				
+			<nav class="section__nav">
 				<button class="btn--openmenu">menu</button>
-				<ul class="nav" >
-					<li class="nav__el"><a href="#connect">Se connecter</a><div class="log">INFOS LOG</div></li>
-				</ul>
 			
 			</nav>	
 		</div>
 	</div>
-		
 		<script type="text/javascript">
 		//vanilla javascript
 			var openMenu = document.getElementsByClassName("btn--openmenu")[0],
@@ -52,13 +47,11 @@
 				menuEl[i].addEventListener("click", function(){
 					nav.classList.add("nav--transition");
 					nav.classList.remove("nav--open");
-					nav.classList.remove(":target");
 				});
 			};
 			
 
 			
 			</script>
-
 	</body>
 </html>

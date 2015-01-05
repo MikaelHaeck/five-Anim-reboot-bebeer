@@ -1,3 +1,83 @@
+body
+{
+	font-family: sans-serif;
+}
+nav ul 
+{
+	list-style: none;
+	margin: 0;
+	padding: 5px;
+	width: 730px;
+	overflow: hidden;
+	margin: 0 auto;
+
+}
+
+nav ul li
+{
+	float: left;
+	font-family: sans-serif;
+	margin-right: 20px;
+	margin-bottom: 5px;
+
+}
+
+nav ul li a 
+{
+	display: block;
+	color:brown;
+	text-decoration: none;
+	border-bottom: 3px solid brown;
+	padding: 10px;
+	font-size: 20px;
+
+	
+}
+
+nav ul li a:hover
+{
+	
+	color: orange;
+	border-bottom: 3px solid orange;
+}
+.current
+{
+	color: orange;
+	border-bottom: 3px solid orange;
+}
+.screenmobile
+{
+	width: 320px;
+	height: 480px;
+	border: 1px solid black;
+	background: white;
+	margin: 0 auto;
+}
+.container
+{
+	margin: 0 auto;
+	width: 900px;
+	position: relative;
+}
+h1
+{
+	position: relative;
+	top: 20px;
+	left: 230px;
+	margin-bottom: 60px;
+	margin-top: 20px;
+}
+p
+{
+	position: relative;
+	left: 230px;
+	width: 450px;
+	margin-bottom: 50px;
+
+}
+
+
+
 /* btn */
 .menu {
 	position: relative;

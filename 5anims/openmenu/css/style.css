@@ -1,7 +1,7 @@
 body
 {
 	font-family: sans-serif;
-
+	
 }
 
 h1
@@ -14,7 +14,9 @@ section
 {
 	margin-bottom: 50px;
 }
-.nav_first ul 
+
+
+nav ul 
 {
 	list-style: none;
 	margin: 0;
@@ -25,7 +27,7 @@ section
 
 }
 
-.nav_first ul li
+nav ul li
 {
 	float: left;
 	font-family: sans-serif;
@@ -34,7 +36,7 @@ section
 
 }
 
-.nav_first ul li a 
+nav ul li a 
 {
 	display: block;
 	color:brown;
@@ -46,18 +48,19 @@ section
 	
 }
 
-.nav_first ul li a:hover
+nav ul li a:hover
 {
 	
 	color: orange;
 	border-bottom: 3px solid orange;
 }
-.nav_first .current
+.current
 {
 	color: orange;
 	border-bottom: 3px solid orange;
 }
-	.screenmobile
+
+.screenmobile
 {
 	width: 320px;
 	height: 480px;
@@ -93,7 +96,7 @@ p
 		position: relative;
 		width: 270px;
 		height: 480px;
-		top: -20px;
+		top: 0;
 		left: 0;
 		background: #BADA55;
 		z-index: 10;
@@ -122,17 +125,10 @@ p
 	.nav__el > a{
 		
 		display: block;
-		padding: 10px 15px;
-		background: #BADA55;
-		color: green;
-		text-decoration: none;
-		margin-bottom: 50px;
-		background: blue;
 	}
-
 	.nav{
 		text-align: left;
-		margin: 20px 0;
+		margin: 0;
 	}
 
 	.section__nav.nav--open{
@@ -167,31 +163,5 @@ p
     85%  {-webkit-transform: translateX( 4px);}
     90%  {-webkit-transform: translateX(0px);}
     95%  {-webkit-transform: translateX(4px);}
-    100% {-webkit-transform: translateX(0);}
-}
-
-
-
-.nav__el:first-child > a
-{
-	-webkit-animation: arrive 1.5s;
-	-webkit-transition-delay: 2s;
-
-}
-.nav__el:nth-child(2) > a
-{
-	-webkit-animation: arrive 2s;
-	-webkit-transition-delay: 4s;
-
-}
-.nav__el:last-child > a
-{
-	-webkit-animation: arrive 2.5s;
-	-webkit-transition-delay: 4s;
-
-}
-
-@-webkit-keyframes arrive{
-    0%   {-webkit-transform: translateX(-500px);}
     100% {-webkit-transform: translateX(0);}
 }

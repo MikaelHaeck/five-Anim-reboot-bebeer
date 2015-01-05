@@ -1,7 +1,7 @@
 body
 {
 	font-family: sans-serif;
-	background: yellow;
+	
 }
 
 h1
@@ -14,22 +14,85 @@ section
 {
 	margin-bottom: 50px;
 }
-nav ul
+nav ul 
 {
 	list-style: none;
-	padding: 0;
 	margin: 0;
+	padding: 5px;
+	width: 730px;
+	overflow: hidden;
+	margin: 0 auto;
+
 }
 
-.section__nav{
-	
-	
+nav ul li
+{
+	float: left;
+	font-family: sans-serif;
+	margin-right: 20px;
+	margin-bottom: 5px;
+
+}
+
+nav ul li a 
+{
+	display: block;
+	color:brown;
+	text-decoration: none;
+	border-bottom: 3px solid brown;
+	padding: 10px;
+	font-size: 20px;
+
 	
 }
+
+nav ul li a:hover
+{
+	
+	color: orange;
+	border-bottom: 3px solid orange;
+}
+.current
+{
+	color: orange;
+	border-bottom: 3px solid orange;
+}
+
+.screenmobile
+{
+	width: 320px;
+	height: 480px;
+	border: 1px solid black;
+	background: white;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.container
+{
+	margin: 0 auto;
+	width: 900px;
+	position: relative;
+}
+h1
+{
+	position: relative;
+	top: 20px;
+	left: 230px;
+	margin-bottom: 60px;
+	margin-top: 20px;
+}
+p
+{
+	position: relative;
+	left: 230px;
+	width: 450px;
+	margin-bottom: 50px;
+
+}
 	.section__nav{
-		position: fixed;
-		width: 90%;
-		height: 100%;
+		position: relative;
+		width: 270px;
+		height: 480px;
 		top: 0;
 		left: 0;
 		background: #BADA55;
@@ -93,7 +156,7 @@ nav ul
 	}
 
 @-webkit-keyframes navopen {
-    0%   {-webkit-transform: translateX(-600px);}
+    0%   {-webkit-transform: translateX(-270px);}
     85%  {-webkit-transform: translateX( 4px);}
     90%  {-webkit-transform: translateX(0px);}
     95%  {-webkit-transform: translateX(4px);}
@@ -109,8 +172,8 @@ nav ul
 .log
 {
 	background: red;
-	width: 450px;
-	height: 300px;
+	width: 186px;
+	height: 170px;
 	position: absolute;
 	top: -100%;
 	left: 30%;
@@ -123,8 +186,9 @@ nav:target li a + .log
 	color: white;
 	display: visible;
 	position: absolute;
-	top: 0%;
-	-webkit-animation: loginfosdown 1s;
+	top: -60%;
+	left: 15%;
+	-webkit-animation: loginfosdown 1.6s;
 	-webkit-animation-fill-mode:forwards;
 	transition: all 300ms ease-in;
 
